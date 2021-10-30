@@ -1,0 +1,47 @@
+
+JSX 
+    - HTML처럼 생긴 JS코드
+    - class -> className으로 사용 
+    - React의 장점 
+        - 데이터 바인딩이 쉽다.(React, Angular, Vue)
+            데이터 바인딩 : 서버에서 가져온 데이터를 도큐먼트 엘리먼트에 꽂아주는 행위
+        
+        - document.getElement 해서 요소를 찾은 후 텍스트를 꽂아주지 않고 <h4>{변수명}</h4> 로 간편하게.
+            { 함수() }
+            이미지 import : 이미지를 import하고 import한 이미지를 지칭하는 이름을 작성 <img src="{이미지}" />
+            상상하는 모든 곳에 {ㅇㅇㅇ}를 넣을 수 있다.
+        
+    
+    - 태그에 style 속성은 일반적으로 사용하지 않음
+        style속성은 Object 형식으로 사용해야한다.
+        css속성 명은 카멜케이스로 작성한다.
+            ex) { {color : 'blue', fontSize : '30px'} }
+
+
+React에서 데이터를 보관하는 방법 두 가지
+    1. 변수에 저장
+
+    2. state
+        state 생성방법(데이터 저장공간 state 만드는 법)
+             소스코드 상단에 import React, { useState } 로 useState 선언
+             리액트에 있는 내장함수를 사용하겠다는 의미
+        
+        state 사용 방법
+
+            자바스크립트 신문법ES6 (destructuring)
+                array, object에 있던 자료를 변수에 쉽게 담고 싶을 때
+                    let {a, b} = obj;
+                    let [a, b] = arr;
+
+            let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집', '파이썬 독학']);
+        
+        state를 사용하는 이유
+            * state는 변경되면 HTML이 자동으로 재렌더링 된다.
+            * 변수는 새로고침을 해야함.
+
+        
+
+
+
+
+

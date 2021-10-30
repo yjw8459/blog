@@ -1,13 +1,15 @@
-/* eslint-disable */
+/* eslint-disable  */
 
 import React, {useState} from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.css'; //CSS코딩 
 
 
 
 
-/* eslint-disable은 문법 Warning을 더이상 표시하지 않음 */
+/* eslint-disable은 문법 Warning을 더이상 표시하지 않음 
+ * 주석처리 해야함. 
+*/
 //{ useState } : React의 내장함수 하나를 사용하겠다는 뜻
 /* state : 변수 대신 쓸 수 있는 데이터 저장 공간  useState()를 이용해서 만들어야함 */
 //JSX에서는 class="" 대신 className="" 사용
@@ -17,7 +19,7 @@ function App() {
     return 100;
   }
    //[a,b] '남자 코트 추천'이 a로 들어가고 남자 코트 추천 state를 정정해주는 함수가 b에 들어감
-  let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집', '파이썬 독학']); //이 문법은 ES6 destructuring 문법(신 문법)
+  let [글제목, 글제목변경] = useState(['호날두 축구 존나잘함', '윤동주 바보 바보', '코딩신']); //이 문법은 ES6 destructuring 문법(신 문법)
   //let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); { 글제목[0] }
   //var [a, b] = [10, 100]; [10, 100] 배열에 있는 값들을 각각 a, b에 담고 싶을 경우
   //state 만의 장점 : Web이 App처럼 동작하게 만들고 싶어서(새로고침 없이) (State는 변경되면 HTML이 자동으로 재렌더링 된다. (HTML로 하면 새로고침 해야함)
@@ -31,6 +33,7 @@ function App() {
    * array 안에 있던 하나하나의 데이터가 2씩 곱해져서 또 다른 Array가 생성이 됌
    * map 함수의 역할 (자바스크립트 기본 문법)
    * map()은 유사 반복문이다. 
+   * map은 요소의 값을 바꿀 때 사용한다.
    */
   var 어레이 = [2, 3, 4];
   var 뉴어레이 = 어레이.map(function(a){

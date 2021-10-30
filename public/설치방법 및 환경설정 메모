@@ -1,0 +1,53 @@
+메모
+
+node.js 설치 (홈페이지)
+    - 이미 설치가 되어있더라도 신버전으로 설치하도록 한다.
+
+작업할 폴더 만들기
+    - VSCode로 작업 폴더 Open
+
+리액트 프로젝트 생성
+    - 터미널에 npx create-react-app blog
+    - npx : nodejs를 설치함으로써 사용할 수 있는 명령어
+    - create-react-app : 리액트 셋팅 다 된 boilerplate, 만들기 쉽게 도와주는 라이브러리
+    - blog : 프로젝트 이름
+
+blog 폴더를 오픈해서 작업 ㄱㄱ
+
+** nodejs를 설치한 이유 : create-react-app을 사용하기 위함. 
+                       nodejs를 설치하면 npm이라는 툴을 이용할 수 있음.
+                       npm을 이용해서 create-react-app 사용 
+
+
+
+src > App.js 
+    - 메인 페이지(index.html)에 들어갈 HTML을 짜는 곳.
+    - 실제 메인페이지는 public 폴더 안에 index.html
+    - App.js > index.html (App.js의 내용이 index.html로)
+    - index.html로 넣도록 명령하는 곳은 index.js
+ 
+
+
+미리보기 띄우는 방법
+    - 터미널에 npm start 
+    - 개발 서버를 띄워줌
+
+폴더 패키징
+    node_modules
+        - 라이브러리를 모은 폴더
+
+    public 
+        - static 파일 보관함.
+        - 이미지, favicon등 
+        - 리액트 프로젝트를 다 만들고 빌드, 컴파일을 하면 디코딩되면서 압축된다.
+        - public 폴더에 있을 경우 압축되지 않음.
+
+    src 
+        - 소스코드 보관함.
+        - package.json
+            - 설치한 라이브러리를 다 모아놓는 파일(gradle?)
+             
+
+
+
+
