@@ -68,7 +68,9 @@ function App() {
         <hr/>
       </div>
 
-      {/*<button onClick={ 글변경 }>버튼</button>*/}
+        <button onClick={ () => { 누른제목변경(0) } }>버튼1</button>
+        <button onClick={ () => { 누른제목변경(1) } }>버튼2</button>
+        <button onClick={ () => { 누른제목변경(2) } }>버튼3</button>
       {/* */}
 
       {
