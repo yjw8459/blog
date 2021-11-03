@@ -28,7 +28,7 @@ function App() {
 
   let [modal, modal변경] = useState(false); // 모달창의 보이는 상태 state (온, 오프 스위치)
   let [누른제목, 누른제목변경] = useState(0);
-
+  let [입력값, 입력값변경] = useState('');
   /**
    * array 안에 있던 하나하나의 데이터가 2씩 곱해져서 또 다른 Array가 생성이 됌
    * map 함수의 역할 (자바스크립트 기본 문법)
@@ -94,7 +94,7 @@ function App() {
        */
         글제목.map(function(글, i){ //글 제목 갯수만큼 출력 a : array 안에 있는 하나하나의 자료  for in
           return  ( //i라는 변수는 맵이 돌때마다 반복 인덱스가 되는 변수 
-                  <div className="list">
+                  <div className="list" key={i}>
                     <h3 onClick={ () => { 누른제목변경(i) } }>{ 글 } <span onClick={ () => { 따봉변경(따봉 + 1) } }>😍{ 따봉 }</span>  </h3> 
                     <p>2월 17일 발행</p>
                     <hr/>
@@ -103,6 +103,16 @@ function App() {
         }) 
       }
       
+      <div className="publish">
+        <input onChange={ (e) => { 입력값변경(e.target.value) } } />
+        <button onClick={ () =>{
+          let array = [입력값, ...글제목];  //spread Operator
+          글제목변경(array);
+        } } >저장</button>
+      </div>
+
+
+
       <button onClick={ () => {modal변경(!modal)}}>열고닫기</button>
 
     {

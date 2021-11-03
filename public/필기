@@ -44,8 +44,10 @@ React에서 데이터를 보관하는 방법 두 가지
             * state는 변경되면 HTML이 자동으로 재렌더링 된다.
             * 변수는 새로고침을 해야함.
 
-        
 
+Element에서 값 다루는 방법
+    - input
+        input에서는 onChange의 e.target.value로 사용한다.
 
 
 
